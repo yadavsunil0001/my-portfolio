@@ -1,7 +1,7 @@
-import { Layout, Button } from "antd";
+import { Layout } from "antd";
 import { Link } from "react-router-dom";
-import { useAppDispatch, useAppSelector } from "../../hooks/reduxHooks";
-import { toggleTheme } from "../../store/themeSlice";
+// import { useAppDispatch, useAppSelector } from "../../hooks/reduxHooks";
+// import { toggleTheme } from "../../store/themeSlice";
 
 export default function Header() {
 //   const dispatch = useAppDispatch();
