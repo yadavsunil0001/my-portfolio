@@ -8,7 +8,7 @@ export default function Experience() {
     <section id="experience" className="section">
       <div className="container">
         <h2 className="section-title">Experience</h2>
-        <p className="section-subtitle">8+ years across networking, e-commerce, travel and life sciences.</p>
+        <p className="section-subtitle">9+ years across networking, e-commerce, travel and life sciences.</p>
 
         <Timeline
           mode="left"

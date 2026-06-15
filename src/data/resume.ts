@@ -3,24 +3,25 @@
 
 export const profile = {
   name: "Sunil Kumar Yadav",
-  title: "Fullstack Web Developer",
-  yearsOfExperience: "8+",
+  title: "Frontend-focused Web Developer",
+  yearsOfExperience: "9+",
   tagline:
-    "Fullstack engineer with 8+ years building scalable web platforms — from React/Next frontends to Java & Node backends.",
+    "Frontend-focused web developer with 9+ years building responsive, high-performance applications in JavaScript, TypeScript, React.js and Node.js.",
   location: "Bangalore, India",
   email: "yadavsunil00001@gmail.com",
   phone: "+91 9479884913",
   resumeUrl: "/SunilKumarYadav.pdf",
   socials: {
     linkedin: "https://www.linkedin.com/in/yadav-sk",
-    github: "https://github.com/yadav-sk",
+    github: "https://github.com/yadavsunil0001",
   },
 };
 
 export const about = {
   summary: [
-    "I'm a Fullstack Web Developer with over 8 years of experience designing and shipping production software across networking, e-commerce, travel, and life-sciences domains.",
-    "I've worked across the stack — building rich React/Next.js frontends and robust Java, Spring Boot, and Node.js backends — and I enjoy turning complex problems into reliable, user-facing products.",
+    "I'm a frontend-focused web developer with 9+ years building responsive, high-performance web applications in JavaScript, TypeScript, React.js and Node.js.",
+    "I'm strong across the modern web stack — component-driven architecture and design systems, scalable state management with Redux and RxJS, and Node.js/Express services with clean REST and gRPC integration. I care deeply about performance, accessibility, and maintainability.",
+    "I've shipped user-facing products at scale at Arista Networks, Groupon, and Traveloka, consistently accelerating feature delivery.",
   ],
 };
 
@@ -28,32 +29,30 @@ export type SkillGroup = { label: string; skills: string[] };
 
 export const skillGroups: SkillGroup[] = [
   {
-    label: "Frontend",
+    label: "Languages",
+    skills: ["JavaScript", "TypeScript", "HTML5", "CSS3"],
+  },
+  {
+    label: "Frameworks & Libraries",
+    skills: ["React.js", "Next.js", "Redux", "RxJS", "Less", "Canvas API"],
+  },
+  {
+    label: "Node.js",
+    skills: ["Node.js", "Express", "REST APIs", "gRPC"],
+  },
+  {
+    label: "Testing",
+    skills: ["Jest", "React Testing Library"],
+  },
+  {
+    label: "Practices",
     skills: [
-      "JavaScript",
-      "React.js",
-      "Next.js",
-      "Redux",
-      "RxJS",
-      "React Testing Library",
-      "gRPC",
-      "CSS3",
-      "Tailwind",
-      "Stylus",
-      "HTML5",
+      "Responsive design",
+      "Web performance (Core Web Vitals)",
+      "Accessibility (a11y)",
+      "Cross-browser",
+      "Design systems",
     ],
-  },
-  {
-    label: "Backend",
-    skills: ["Java", "Node.js", "Spring Boot", "JAX-RS", "Dropwizard", "Express"],
-  },
-  {
-    label: "Database",
-    skills: ["PostgreSQL", "MySQL", "Elasticsearch", "MongoDB"],
-  },
-  {
-    label: "Tools & Platforms",
-    skills: ["Git", "Docker", "Kubernetes", "Jenkins", "Kibana", "Gerrit", "Figma", "Kafka", "Flink"],
   },
 ];
 
@@ -68,23 +67,27 @@ export type Experience = {
 
 export const experiences: Experience[] = [
   {
-    role: "Software Developer",
+    role: "Software Developer (Frontend)",
     company: "Arista Networks",
     period: "Jun 2024 – Present",
     highlights: [
-      "Contribute to the CloudVision platform team, focusing on onboarding and monitoring of Arista and third-party switches.",
-      "Improved network observability and multi-vendor compatibility by designing scalable solutions for switch lifecycle management.",
+      "Built real-time network monitoring dashboards in React, Redux and RxJS, rendering live telemetry and device events streamed over gRPC.",
+      "Architected scalable state management and a reusable component library with shared design-system patterns, accelerating feature delivery across multiple network-management modules.",
+      "Delivered the frontend for CloudVision, an observability and management platform, improving onboarding and monitoring for thousands of Arista and third-party switches.",
+      "Optimized rendering of high-volume telemetry streams and built responsive, accessible UI for a data-dense product.",
+      "Automated build and deployment with Jenkins CI/CD and Gerrit-driven code review.",
     ],
-    tech: ["React.js", "Redux", "RxJS", "gRPC", "Jenkins", "Gerrit"],
+    tech: ["React.js", "TypeScript", "Redux", "RxJS", "gRPC", "Rush", "Jenkins", "Gerrit"],
   },
   {
     role: "Principal Member of Technical Staff",
     company: "Oracle Pvt Ltd",
     period: "Apr 2024 – Jun 2024",
     highlights: [
-      "Set up the initial Flink pipeline to streamline the patient registration process.",
+      "Built React.js interface enhancements for a patient-registration workflow integrated with a streaming data backend.",
+      "Set up a Flink pipeline to streamline the registration process and improve responsiveness.",
     ],
-    tech: ["React.js", "Kafka", "Flink", "Spring Boot"],
+    tech: ["React.js", "JavaScript", "Kafka", "Flink", "Spring Boot"],
   },
   {
     role: "Software Developer 2",
@@ -92,31 +95,32 @@ export const experiences: Experience[] = [
     location: "Bangalore",
     period: "Jun 2020 – Dec 2023",
     highlights: [
-      "Campaign Editor — designed and implemented features including Pricing Trust, price/quantity updates, fine print, and creative content.",
-      "AI Deal Creation — streamlined merchant onboarding by leveraging AI to scrape and retrieve details from merchant websites.",
-      "Merchant Advisor — revamped the merchant web interface, positively impacting over 1M users.",
+      "Revamped the merchant web interface with Next.js and React.js, delivering a responsive, cross-browser experience that positively impacted over 1M users.",
+      "Designed and shipped user-facing features — Pricing Trust, Price & Quantity updates, Fine Print and Creative Content — improving merchant experience and conversion.",
+      "Improved page-load performance and Core Web Vitals through SSR and code-splitting in Next.js.",
+      "Streamlined merchant onboarding with AI-driven scraping and retrieval of website details, reducing manual effort.",
     ],
-    tech: ["Next.js", "React.js", "Java", "Spring Boot", "Dropwizard", "Redux", "Node.js", "MySQL", "Docker", "Kubernetes"],
+    tech: ["Next.js", "React.js", "TypeScript", "Redux", "Less", "Java", "Spring Boot"],
   },
   {
     role: "Senior Software Developer",
     company: "Traveloka India Pvt Ltd",
     period: "Sep 2018 – May 2020",
     highlights: [
-      "Engineered a Photoshop-like internal tool for generating dynamic promotional images using React.js and the Canvas library.",
-      "Built a robust backend process to recreate images with dynamic variables for final promotional content.",
+      "Engineered a Photoshop-like web tool with React.js and the Canvas API, enabling internal users to generate dynamic promotional images and boosting marketing throughput.",
+      "Built a Node.js service to recreate images with dynamic variables, streamlining final promotional content generation.",
     ],
-    tech: ["React.js", "Java", "Redux", "Spring Boot", "Node.js", "MongoDB", "CSS3"],
+    tech: ["React.js", "JavaScript", "Node.js", "Redux", "CSS3", "MongoDB", "Java", "Spring Boot"],
   },
   {
     role: "Associate Software Developer",
     company: "Strand Life Sciences",
     period: "Jun 2017 – Sep 2018",
     highlights: [
-      "Migrated the India Biodiversity Portal from a legacy Groovy on Grails system to a modern JAX-RS + React.js architecture.",
-      "Used Elasticsearch as a secondary data source to enhance retrieval efficiency and speed.",
+      "Rebuilt the India Biodiversity Portal frontend in React.js (migrating from Groovy on Grails), improving performance and user experience.",
+      "Built JAX-RS services and integrated Elasticsearch for fast data retrieval and search.",
     ],
-    tech: ["JAX-RS", "React.js", "Java", "Redux", "Elasticsearch", "CSS3"],
+    tech: ["React.js", "JavaScript", "Redux", "CSS3", "JAX-RS", "Java", "Elasticsearch"],
   },
 ];
 
@@ -129,32 +133,32 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    title: "AI Deal Creation",
-    org: "Groupon",
+    title: "CloudVision Network Dashboards",
+    org: "Arista Networks",
     description:
-      "Streamlined the merchant onboarding flow by using AI to scrape and extract business details directly from merchant websites, cutting manual data entry.",
-    tech: ["Java", "Dropwizard", "React.js", "Redux", "Node.js", "MySQL"],
+      "Real-time network monitoring dashboards rendering live telemetry and device events streamed over gRPC, backed by a reusable design-system component library.",
+    tech: ["React.js", "TypeScript", "Redux", "RxJS", "gRPC"],
   },
   {
-    title: "Merchant Advisor",
+    title: "Merchant Web Platform",
     org: "Groupon",
     description:
-      "Revamped the merchant-facing web interface, improving usability and positively impacting over 1M users.",
-    tech: ["React.js", "Java", "Spring Boot", "Redux", "Node.js", "Docker", "Kubernetes"],
+      "Revamped the merchant-facing interface with Next.js and SSR, positively impacting over 1M users while improving Core Web Vitals and conversion.",
+    tech: ["Next.js", "React.js", "TypeScript", "Redux", "Less"],
   },
   {
     title: "Dynamic Image Generator",
     org: "Traveloka",
     description:
-      "A Photoshop-like internal tool that lets users generate dynamic promotional images on an HTML Canvas, with a backend that recreates images using dynamic variables.",
-    tech: ["React.js", "Canvas", "Java", "Spring Boot", "Node.js", "MongoDB"],
+      "A Photoshop-like web tool using React and the Canvas API that lets users generate dynamic promotional images, with a Node.js service that recreates images from dynamic variables.",
+    tech: ["React.js", "Canvas API", "Node.js", "Redux", "MongoDB"],
   },
   {
     title: "India Biodiversity Portal",
     org: "Strand Life Sciences",
     description:
-      "Led the migration of a national biodiversity platform from legacy Groovy on Grails to a modern JAX-RS + React architecture, with Elasticsearch-backed search.",
-    tech: ["JAX-RS", "React.js", "Java", "Elasticsearch", "Redux"],
+      "Rebuilt the frontend of a national biodiversity platform in React (migrating from Groovy on Grails), with JAX-RS services and Elasticsearch-backed search.",
+    tech: ["React.js", "JAX-RS", "Java", "Elasticsearch", "Redux"],
   },
 ];
 
@@ -181,9 +185,15 @@ export const achievements: Achievement[] = [
 
 export const education = [
   {
-    degree: "Integrated Post Graduation in Computer Science",
+    degree: "Integrated Post Graduation, Computer Science",
     institute: "IIIT Gwalior",
-    period: "Jul 2012 – May 2017",
-    detail: "CGPA: 7.56",
+    period: "2012 – 2017",
+    detail: "GPA: 7.56",
+  },
+  {
+    degree: "12th Class",
+    institute: "KV Talbehat",
+    period: "2011",
+    detail: "94%",
   },
 ];
