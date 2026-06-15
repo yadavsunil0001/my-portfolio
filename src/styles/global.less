@@ -1,4 +1,62 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
+  margin: 0;
+  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+// Shared content container
+.container {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+// Vertical rhythm for each scroll section + offset for the sticky header
+.section {
+  padding: 88px 0;
+  scroll-margin-top: 72px;
+
+  @media (max-width: 768px) {
+    padding: 56px 0;
   }
+}
+
+.section-alt {
+  background: rgba(99, 102, 241, 0.04);
+}
+
+[data-theme="dark"] .section-alt {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.section-title {
+  font-size: 30px;
+  font-weight: 600;
+  margin: 0 0 8px;
+
+  @media (max-width: 768px) {
+    font-size: 24px;
+  }
+}
+
+.section-subtitle {
+  margin: 0 0 40px;
+  opacity: 0.65;
+}
+
+// Respect users who prefer no motion
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}

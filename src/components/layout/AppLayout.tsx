@@ -9,7 +9,7 @@ export default function AppLayout() {
   return (
     <Layout style={{ minHeight: "100vh" }}>
       <Header />
-      <Content style={{ padding: "24px" }}>
+      <Content>
         <Outlet />
       </Content>
       <Footer />

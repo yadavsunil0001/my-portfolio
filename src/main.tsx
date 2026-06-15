@@ -4,22 +4,16 @@ import { Provider } from "react-redux";
 import { store } from "./app/store";
 import { RouterProvider } from "react-router-dom";
 import { router } from "./router";
-import { ConfigProvider } from "antd";
+import ThemeProvider from "./components/ThemeProvider";
 import "antd/dist/reset.css";
 import "./styles/global.less";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <Provider store={store}>
-      <ConfigProvider
-        theme={{
-          token: {
-            colorPrimary: "#1677ff",
-          },
-        }}
-      >
+      <ThemeProvider>
         <RouterProvider router={router} />
-      </ConfigProvider>
+      </ThemeProvider>
     </Provider>
   </React.StrictMode>
 );

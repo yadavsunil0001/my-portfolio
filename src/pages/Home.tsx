@@ -1,10 +1,19 @@
-import { Card } from "antd";
+import Hero from "../components/sections/Hero";
+import About from "../components/sections/About";
+import Experience from "../components/sections/Experience";
+import Projects from "../components/sections/Projects";
+import Achievements from "../components/sections/Achievements";
+import Contact from "../components/sections/Contact";
 
 export default function Home() {
   return (
-    <Card title="Welcome">
-      <p>Hi, I'm Sunil 👋</p>
-      <p>Frontend Engineer</p>
-    </Card>
+    <>
+      <Hero />
+      <About />
+      <Experience />
+      <Projects />
+      <Achievements />
+      <Contact />
+    </>
   );
 }
