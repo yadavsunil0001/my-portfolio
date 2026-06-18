@@ -3,10 +3,10 @@
 
 export const profile = {
   name: "Sunil Kumar Yadav",
-  title: "Frontend-focused Web Developer",
+  title: "Frontend-focused Senior Software Engineer",
   yearsOfExperience: "9+",
   tagline:
-    "Frontend-focused web developer with 9+ years building responsive, high-performance applications in JavaScript, TypeScript, React.js and Node.js.",
+    "Frontend-focused senior software engineer with 9+ years building responsive, high-performance applications in JavaScript, TypeScript, React.js and Node.js — with full-stack and distributed-systems breadth across Go, gRPC and Kubernetes.",
   location: "Bangalore, India",
   email: "yadavsunil00001@gmail.com",
   phone: "+91 9479884913",
@@ -19,8 +19,9 @@ export const profile = {
 
 export const about = {
   summary: [
-    "I'm a frontend-focused web developer with 9+ years building responsive, high-performance web applications in JavaScript, TypeScript, React.js and Node.js.",
+    "I'm a frontend-focused senior software engineer with 9+ years building responsive, high-performance web applications in JavaScript, TypeScript, React.js and Node.js.",
     "I'm strong across the modern web stack — component-driven architecture and design systems, scalable state management with Redux and RxJS, and Node.js/Express services with clean REST and gRPC integration. I care deeply about performance, accessibility, and maintainability.",
+    "I also bring full-stack and distributed-systems breadth — Go services, microservices, gRPC, Kubernetes, Docker and Elasticsearch — built while delivering large-scale network and enterprise platforms.",
     "I've shipped user-facing products at scale at Arista Networks, Groupon, and Traveloka, consistently accelerating feature delivery.",
   ],
 };
@@ -30,15 +31,19 @@ export type SkillGroup = { label: string; skills: string[] };
 export const skillGroups: SkillGroup[] = [
   {
     label: "Languages",
-    skills: ["JavaScript", "TypeScript", "HTML5", "CSS3"],
+    skills: ["JavaScript", "TypeScript", "HTML5", "CSS3", "Go"],
   },
   {
     label: "Frameworks & Libraries",
     skills: ["React.js", "Next.js", "Redux", "RxJS", "Less", "Canvas API"],
   },
   {
-    label: "Node.js",
-    skills: ["Node.js", "Express", "REST APIs", "gRPC"],
+    label: "Backend & Distributed Systems",
+    skills: ["Node.js", "Express", "REST APIs", "gRPC", "Microservices", "Elasticsearch"],
+  },
+  {
+    label: "DevOps & Tooling",
+    skills: ["Docker", "Kubernetes", "Jenkins (CI/CD)", "Git", "Gerrit"],
   },
   {
     label: "Testing",
