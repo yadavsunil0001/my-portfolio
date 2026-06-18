@@ -17,6 +17,7 @@ import {
   MailOutlined,
 } from "@ant-design/icons";
 import { coreStack, profile, snapshot, stats } from "../../data/resume";
+import CompanyStrip from "./CompanyStrip";
 
 const { Title, Paragraph, Text } = Typography;
 
@@ -28,6 +29,8 @@ export default function Hero() {
       style={{ paddingTop: 104, paddingBottom: 72 }}
     >
       <div className="container">
+        <CompanyStrip />
+
         <Row gutter={[48, 40]} align="middle">
           {/* Left — intro */}
           <Col xs={24} md={13}>

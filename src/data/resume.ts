@@ -27,7 +27,7 @@ export type Stat = { value: string; label: string };
 export const stats: Stat[] = [
   { value: "9+", label: "Years of experience" },
   { value: "5", label: "Companies shipped at" },
-  { value: "1M+", label: "Users impacted" },
+  { value: "500M+", label: "Customers impacted" },
 ];
 
 export type SnapshotItem = { label: string; value: string };
@@ -39,6 +39,22 @@ export const snapshot: SnapshotItem[] = [
   { label: "Location", value: "Bangalore, India · Open to relocate" },
   { label: "Work mode", value: "Remote · Hybrid · Onsite" },
   { label: "Availability", value: "Open to new opportunities" },
+];
+
+// Companies, most recent first — used for the "where I've worked" logo strip.
+// `logo` is an asset in /public/logos; omit it to fall back to a name monogram.
+export type Company = {
+  name: string;
+  logo?: string;
+  current?: boolean;
+};
+
+export const companies: Company[] = [
+  { name: "Arista Networks", logo: "/logos/arista.png", current: true },
+  { name: "Oracle", logo: "/logos/oracle.png" },
+  { name: "Groupon", logo: "/logos/groupon.png" },
+  { name: "Traveloka", logo: "/logos/traveloka.png" },
+  { name: "Strand Life Sciences" },
 ];
 
 export const coreStack: string[] = [
