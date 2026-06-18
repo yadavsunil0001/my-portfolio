@@ -11,11 +11,46 @@ export const profile = {
   email: "yadavsunil00001@gmail.com",
   phone: "+91 9479884913",
   resumeUrl: "/SunilKumarYadav.pdf",
+  availability: "Open to opportunities",
+  workModes: ["Remote", "Hybrid", "Onsite"],
+  openToRelocate: true,
   socials: {
     linkedin: "https://www.linkedin.com/in/yadav-sk",
     github: "https://github.com/yadavsunil0001",
   },
 };
+
+// Recruiter-facing "at a glance" snapshot — the essentials a hiring
+// manager wants to scan in seconds.
+export type Stat = { value: string; label: string };
+
+export const stats: Stat[] = [
+  { value: "9+", label: "Years of experience" },
+  { value: "5", label: "Companies shipped at" },
+  { value: "1M+", label: "Users impacted" },
+];
+
+export type SnapshotItem = { label: string; value: string };
+
+export const snapshot: SnapshotItem[] = [
+  { label: "Current role", value: "Senior Software Engineer · Arista Networks" },
+  { label: "Experience", value: "9+ years · Frontend-focused, full-stack breadth" },
+  { label: "Education", value: "Integrated PG (CS), IIIT Gwalior" },
+  { label: "Location", value: "Bangalore, India · Open to relocate" },
+  { label: "Work mode", value: "Remote · Hybrid · Onsite" },
+  { label: "Availability", value: "Open to new opportunities" },
+];
+
+export const coreStack: string[] = [
+  "React.js",
+  "TypeScript",
+  "Next.js",
+  "Node.js",
+  "Redux",
+  "RxJS",
+  "gRPC",
+  "Go",
+];
 
 export const about = {
   summary: [
